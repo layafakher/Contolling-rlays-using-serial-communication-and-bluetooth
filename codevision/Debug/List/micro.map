@@ -1,0 +1,67 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+str                                                                               0x05DB      50
+in1                                                                               0x060D      20
+choice                                                                            0x0621      20
+onh                                                                               0x0635       2
+onm                                                                               0x0637       2
+ons                                                                               0x0639       2
+offh                                                                              0x063B       2
+offm                                                                              0x063D       2
+offs                                                                              0x063F       2
+ch                                                                                0x0641       2
+cm                                                                                0x0643       2
+cs                                                                                0x0645       2
+time                                                                              0x0647      16
+time2                                                                             0x0657      16
+flag                                                                              0x0667       2
+finish                                                                            0x0669       2
+start_time                                                                        0x066B       6
+stop_time                                                                         0x0671       6
+diff                                                                              0x0677       6
+_base_y                                                                           0x067D       4
+_lcd_x                                                                            0x0681       1
+_lcd_y                                                                            0x0682       1
+_lcd_maxx                                                                         0x0683       1
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+x                                                                                 R4,R5        2
+x2                                                                                R6,R7        2
+sec                                                                               R8,R9        2
+min                                                                               R10,R11      2
+h                                                                                 R12,R13      2
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+diff_between_time                                                                 0x00145     72
+timer0_ovf_isr                                                                    0x0018D      1
+timer0_comp_isr                                                                   0x0018E    161
+main                                                                              0x0022F    404
+_lcd_write_nibble_G100                                                            0x003C3     37
+_lcd_write_data                                                                   0x003E8     12
+lcd_gotoxy                                                                        0x003F4     17
+lcd_clear                                                                         0x00405     14
+lcd_putchar                                                                       0x00413     32
+lcd_puts                                                                          0x00433     17
+lcd_init                                                                          0x00444     48
+getchar                                                                           0x00474      4
+put_buff_G101                                                                     0x00478     63
+_print_G101                                                                       0x004B7    308
+sprintf                                                                           0x005EB     46
+get_usart_G101                                                                    0x00619     22
+_scanf_G101                                                                       0x0062F    322
+scanf                                                                             0x00771     29
+strcmp                                                                            0x0078E     20
+strlen                                                                            0x007A2     12
+strlenf                                                                           0x007AE     13
+isdigit                                                                           0x007BB      9
+isspace                                                                           0x007C4     11
+isxdigit                                                                          0x007CF     15
